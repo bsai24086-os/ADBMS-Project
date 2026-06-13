@@ -1,0 +1,37 @@
+.outstanding-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(245,158,11,0.1);
+  border: 1px solid rgba(245,158,11,0.3);
+  border-radius: 12px;
+  padding: 14px 20px;
+  margin-bottom: 24px;
+  color: var(--amber);
+  font-size: 14px;
+}
+
+.outstanding-banner strong {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.row-overdue {
+  border-left: 3px solid var(--red) !important;
+}
+
+.inv-number {
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  color: var(--mint) !important;
+}
+
+.inv-amount {
+  font-weight: 700;
+  color: var(--white) !important;
+}
+
+.text-gray {
+  color: var(--gray-1) !important;
+  font-size: 13px !important;
+}

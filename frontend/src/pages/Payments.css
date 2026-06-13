@@ -1,0 +1,91 @@
+.sro-banner {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px 28px;
+  margin-bottom: 24px;
+}
+
+.sro-item { flex: 1; }
+
+.sro-label {
+  font-size: 13px;
+  color: var(--gray-1);
+  margin-bottom: 6px;
+}
+
+.sro-value {
+  font-family: 'Syne', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.sro-green { color: var(--mint); }
+.sro-amber { color: var(--amber); }
+
+.sro-divider {
+  width: 1px;
+  height: 50px;
+  background: var(--border);
+  margin: 0 32px;
+}
+
+.charts-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 0;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.currency-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.currency-code {
+  background: var(--navy-3);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--mint);
+  width: 40px;
+  text-align: center;
+}
+
+.currency-foreign {
+  flex: 1;
+  font-size: 13px;
+  color: var(--gray-1);
+}
+
+.currency-pkr {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.fetch-rate-btn {
+  background: rgba(14,124,123,0.2);
+  border: none;
+  border-radius: 6px;
+  color: var(--mint);
+  font-size: 11px;
+  padding: 2px 8px;
+  cursor: pointer;
+  margin-left: 8px;
+  font-family: 'DM Sans', sans-serif;
+}

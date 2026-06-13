@@ -1,0 +1,83 @@
+.expense-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.exp-stat {
+  text-align: center;
+}
+
+.exp-stat-label {
+  font-size: 12px;
+  color: var(--gray-1);
+  margin-bottom: 8px;
+}
+
+.exp-stat-value {
+  font-family: 'Syne', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.exp-content-row {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 16px;
+}
+
+.expense-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.expense-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(14,124,123,0.08);
+}
+
+.exp-deduct-indicator {
+  width: 4px;
+  height: 36px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.deduct-yes { background: var(--mint); }
+.deduct-no  { background: var(--red); }
+
+.exp-info { flex: 1; min-width: 0; }
+
+.exp-desc {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--white);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.exp-meta {
+  font-size: 11px;
+  color: var(--gray-1);
+  margin-top: 2px;
+}
+
+.exp-receipt { color: var(--teal); }
+
+.exp-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.exp-amount {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+}

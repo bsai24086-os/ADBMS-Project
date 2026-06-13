@@ -1,0 +1,22 @@
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--navy);
+}
+
+.main-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  margin-left: 240px;
+}
+
+.content-area {
+  flex: 1;
+  overflow-y: auto;
+  background: 
+    radial-gradient(ellipse at 20% 20%, rgba(14,124,123,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 80%, rgba(20,184,166,0.05) 0%, transparent 60%),
+    var(--navy);
+}

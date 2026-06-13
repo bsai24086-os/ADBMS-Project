@@ -1,0 +1,168 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 16px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 16px;
+  flex: 1;
+  max-width: 400px;
+}
+
+.search-box input {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  width: 100%;
+}
+
+.search-box input::placeholder {
+  color: var(--gray-2);
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.client-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  animation: slideIn 0.3s ease both;
+}
+
+.client-card:hover {
+  border-color: var(--teal);
+  transform: translateY(-2px);
+}
+
+.client-card-active {
+  border-color: var(--mint) !important;
+  box-shadow: 0 0 0 1px var(--mint);
+}
+
+.client-card-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.client-avatar {
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, var(--teal), var(--mint));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Syne', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+.client-info { flex: 1; min-width: 0; }
+
+.client-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--white);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.client-meta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--gray-1);
+  margin-top: 3px;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: var(--gray-2);
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+
+.delete-btn:hover {
+  background: rgba(239,68,68,0.1);
+  color: var(--red);
+}
+
+.client-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.client-currency {
+  font-size: 12px;
+  color: var(--gray-1);
+  background: var(--navy-3);
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.client-fee {
+  font-size: 12px;
+  color: var(--amber);
+}
+
+.client-metadata {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.meta-key {
+  color: var(--gray-1);
+  text-transform: capitalize;
+}
+
+.meta-val {
+  color: var(--white);
+  font-weight: 500;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}

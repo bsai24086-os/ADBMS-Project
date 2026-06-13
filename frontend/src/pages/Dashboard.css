@@ -1,0 +1,184 @@
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.stat-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: var(--gray-1);
+  font-weight: 500;
+}
+
+.stat-value {
+  font-family: 'Syne', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.stat-sub {
+  font-size: 12px;
+  color: var(--gray-2);
+}
+
+.charts-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.chart-card-wide,
+.chart-card-small {
+  min-height: 300px;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.chart-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.chart-sub {
+  font-size: 12px;
+  color: var(--gray-1);
+  margin-top: 4px;
+}
+
+.pie-legend {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.legend-name {
+  flex: 1;
+  color: var(--gray-1);
+}
+
+.legend-val {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.bottom-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(14,124,123,0.08);
+}
+
+.activity-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--mint);
+  flex-shrink: 0;
+}
+
+.activity-info {
+  flex: 1;
+}
+
+.activity-client {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.activity-invoice {
+  font-size: 12px;
+  color: var(--gray-1);
+  margin-top: 2px;
+}
+
+.activity-amount {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--mint);
+}
+
+.overdue-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(14,124,123,0.08);
+}
+
+.overdue-num {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.overdue-client {
+  font-size: 12px;
+  color: var(--gray-1);
+  margin-top: 2px;
+}
+
+.overdue-right {
+  text-align: right;
+}
+
+.overdue-amount {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--amber);
+}
+
+.overdue-days {
+  font-size: 11px;
+  color: var(--red);
+  margin-top: 2px;
+}
